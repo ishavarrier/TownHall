@@ -86,38 +86,78 @@ section.active {
     color: #555;
 }
 
+/* Popup Styles */
 .popup {
+    justify-content: space-between; /* Space out the two columns */
+    width: 80%; /* Adjust width of the popup */
+    max-width: 1200px; /* Limit the maximum width */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 2rem;
-    width: 80%;
-    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: none;
-    z-index: 1000;
+    gap:20px
 }
 
-.popup img {
+.container {
+    display: flex;
+    gap: 20px;
+  }
+
+.column{
+    flex:1;
+  }
+
+.popup-left-column {
+    width: 30%; /* Take up 40% of the space */
+    padding-right: 20px;
+}
+
+.popup-right-column {
+    width: 55%; /* Take up 55% of the space */
+}
+
+.popup-left-column img {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: auto;
+    border-radius: 8px;
+}
+
+.popup-left-column h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.popup-left-column p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section h4 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+#comment-input {
     width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-.popup h2 {
-    margin-bottom: 1rem;
-}
-
-.popup p {
-    color: #333;
-}
-
-.popup button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
+#submit-comment {
+    padding: 8px 15px;
     background-color: #007BFF;
     color: white;
     border: none;
@@ -125,17 +165,35 @@ section.active {
     cursor: pointer;
 }
 
-.popup button:hover {
+#submit-comment:hover {
     background-color: #0056b3;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    display: none;
+.popup-right-column .summary-box, 
+.popup-right-column .details-box {
+    margin-bottom: 20px;
+}
+
+.popup-right-column h3, 
+.popup-right-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.popup-right-column p {
+    font-size: 1rem;
+}
+
+.close-popup {
+    padding: 8px 15px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.close-popup:hover {
+    background-color: #e64a19;
 }
