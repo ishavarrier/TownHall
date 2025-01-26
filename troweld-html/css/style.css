@@ -271,6 +271,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
   color: var(--dark-green);
+  background-color: var(--light-yellow);
 }
 
 .custom_nav-container .nav_search-btn {
@@ -566,9 +567,11 @@ a:focus {
   color: var(--brown);
 }
 
+
+
 .portfolio_section {
-  background-color: var(--dark-green);
-  color: var(--light-yellow);
+  background-color: var(--light-yellow);
+  color: var(--dark-green);
   padding-top: 45px;
 }
 
@@ -1342,3 +1345,4 @@ textarea.form-control {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
