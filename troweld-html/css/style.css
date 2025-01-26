@@ -270,7 +270,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-  color: var(--brown);
+  color: var(--dark-green);
 }
 
 .custom_nav-container .nav_search-btn {
@@ -983,7 +983,7 @@ a:focus {
 }
 
 .client_section .carousel-indicators li {
-  background-color: var(--brown);
+  background-color: var(--dark-green);
   width: 20px;
   height: 20px;
   border: none;
@@ -996,6 +996,146 @@ a:focus {
 .client_section .carousel-indicators li.active {
   background-color: var(--dark-green);
 }
+/* Feedback Section */
+.feedback_section {
+  padding: 50px 0;
+  background-color: var(--light-yellow);
+}
+
+.heading_container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--dark-green);
+}
+
+.feedback_display {
+  margin-top: 30px;
+}
+
+.feedback_item {
+  background-color: var(--light-yellow);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px var(--brown);
+}
+
+.feedback_author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feedback_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author_details strong {
+  font-size: 16px;
+  color: var(--dark-green);
+}
+
+.author_details span {
+  font-size: 12px;
+  color: var(--dark-green);
+  margin-left: 5px;
+}
+
+.feedback_item p {
+  font-size: 14px;
+  color: var(--dark-green);
+  margin-bottom: 15px;
+}
+
+/* Enhanced Reply Button */
+.reply-btn {
+  background-color: var(--dark-green);
+  color: var(--light-yellow);
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reply-btn:hover {
+  background-color: var(--dark-green);
+}
+
+/* Response Box Styling */
+.response_box {
+  margin-top: 15px;
+  display: none;
+  padding: 20px;
+  background-color: var(--light-yellow);
+  border-radius: 8px;
+  border: 1px solid var(--light-yellow);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.response_box textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--light-yellow);
+  font-size: 14px;
+  resize: vertical;
+  background-color: var(--light-yellow);
+}
+
+.response_box button {
+  margin-top: 10px;
+  background-color: var(--dark-green);
+  color: var(--light-yellow);
+  padding: 10px 25px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.response_box button:hover {
+  background-color: var(--dark-green);
+}
+
+/* Feedback Form Styling */
+.feedback_form {
+  background-color: var(--light-yellow);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--brown);
+}
+
+.feedback_form button {
+  background-color: var(--dark-green);
+  color: var(--light-yellow);
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.feedback_form button:hover {
+  background-color: var(--dark-green);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .feedback_section {
+    padding: 20px;
+  }
+
+  .feedback_form button {
+    width: 100%;
+  }
+}
+
 
 /* info section */
 .info_section {
@@ -1143,6 +1283,9 @@ a:focus {
 }
 
 /* end info section */
+
+/*feedback page*/
+
 /* footer section*/
 .footer_section {
   position: relative;
