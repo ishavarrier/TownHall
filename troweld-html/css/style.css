@@ -271,6 +271,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
   color: var(--dark-green);
+  background-color: var(--light-yellow);
 }
 
 .custom_nav-container .nav_search-btn {
@@ -566,9 +567,16 @@ a:focus {
   color: var(--brown);
 }
 
+/* Logo styling */
+.logo {
+  height: 100px; /* Set height based on your navbar height */
+  width: auto;  /* Maintain aspect ratio */
+  display: block; /* Ensures the image is displayed as a block-level element */
+}
+
 .portfolio_section {
-  background-color: var(--dark-green);
-  color: var(--light-yellow);
+  background-color: var(--light-yellow);
+  color: var(--dark-green);
   padding-top: 45px;
 }
 
@@ -1299,7 +1307,47 @@ a:focus {
   margin: 0;
 }
 
+.btn {
+  background-color: var(--dark-green); /* Brown color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+  background-color: var(--light-yellow); /* Darker brown when hovered */
+  color: var(--brown);
+  border-color: var(--dark-green);
+  border-radius: 5px;
+}
+
+/* Styling specific to the 'Read More' button */
+.text-center .btn {
+  margin-top: 10px;
+  border-color: var(--dark-green);
+}
+
+
+
+
+
+
+/* Optional: Style textarea to match the overall design */
+textarea.form-control {
+  border: 1px solid #6f4f1f; /* Brown border */
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
 .footer_section p a {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
