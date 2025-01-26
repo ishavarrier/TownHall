@@ -34,10 +34,79 @@
 
 <body class="">
     <div class="hero_area">
-        <!-- header section remains the same -->
+                <!-- header section strats -->
         <header class="header_section">
-            <!-- ... (previous header code remains unchanged) ... -->
+            <div class="header_top">
+            <div class="container-fluid header_top_container">
+                <a class="navbar-brand " href="index.html"> Town<span> Hall</span> </a>
+                <div class="contact_nav">
+                <a href="">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>
+                    Location
+                    </span>
+                </a>
+                <a href="">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                    Call : +01 99999999999
+                    </span>
+                </a>
+                <a href="">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                    slotownhall@gmail.com
+                    </span>
+                </a>
+                </div>
+                <div class="social_box">
+                <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                </div>
+            </div>
+            </div>
+            <div class="header_bottom">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand navbar_brand_mobile" href="index.html"> SLO<span>Townhall</span> </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""> </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="current_projects.html"> Current Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html"> Feedback</a>
+                    </li>
+                    <form class="form-inline">
+                        <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+            </div>
         </header>
+        <!-- end header section -->
         <!-- end header section -->
 
         <!-- Service Section -->
@@ -168,16 +237,17 @@
         <script src="js/bootstrap.js"></script>
 
         <script>
-        document.getElementById('clickableContent').addEventListener('wheel', function(event) {
-        event.preventDefault(); // if you need to prevent default wheel behavior
-            }, { passive: true });
-
-            document.getElementById('clickableContent').addEventListener('click', function() {
-        var myModal = new bootstrap.Modal(document.getElementById('iframeModal'));
-        console.log('i was clicked');
-        myModal.show();
+            document.getElementById('clickableContent').addEventListener('wheel', function(event) {
+            event.preventDefault(); // if you need to prevent default wheel behavior
+                }, { passive: true });
+        
+                document.getElementById('clickableContent').addEventListener('click', function() {
+            var myModal = new bootstrap.Modal(document.getElementById('iframeModal'));
+            console.log('i was clicked');
+            myModal.show();
         });
-        </script>
+            </script>
+        
 
         <script>
             document.getElementById('currentYear').textContent = new Date().getFullYear();
