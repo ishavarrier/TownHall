@@ -567,7 +567,12 @@ a:focus {
   color: var(--brown);
 }
 
-
+/* Logo styling */
+.logo {
+  height: 100px; /* Set height based on your navbar height */
+  width: auto;  /* Maintain aspect ratio */
+  display: block; /* Ensures the image is displayed as a block-level element */
+}
 
 .portfolio_section {
   background-color: var(--light-yellow);
