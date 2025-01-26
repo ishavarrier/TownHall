@@ -652,7 +652,7 @@ a:focus {
 }
 
 .portfolio_section .box .img-box .btn_overlay a {
-  padding: 10px 45px;
+  padding: 30px 45px;
   border: 1px solid var(--brown);
   color: var(--brown);
 }
