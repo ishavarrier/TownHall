@@ -111,7 +111,6 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../images/downtown.jpg);
   background-size: cover;
 }
 
@@ -374,15 +373,23 @@ a:focus {
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center; /* Ensures content is centered */
+  background-image: url(../images/downtown.jpg);
+  background-size: cover; /* Ensures the background image covers the entire section */
+  background-position: center center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Ensure it takes the full height of the viewport */
 }
+
+
 
 .slider_section .dot_design {
   position: absolute;
