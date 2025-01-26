@@ -48,7 +48,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #da7426;
+  color: #0a3d12;
 }
 
 .heading_container.heading_center {
@@ -87,7 +87,7 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../images/townhall.jpg);
+  background-image: url(../images/downtown.jpg);
   background-size: cover;
 }
 
@@ -206,7 +206,7 @@ a:focus {
 }
 
 .navbar-brand {
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   font-size: 24px;
 }
