@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Town Hall Engagement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="overlay"></div>
+    <div class="popup">
+    <div class="container">
+    <div class="column">
+        <img src="" alt="Popup Image">
+        <h2>Popup Title</h2>
+        <p>Popup Description</p>
+
+        <div class="comments-section">
+            <h4>Leave a Comment:</h4>
+            <textarea id="comment-input" placeholder="Write your comment here..." rows="4"></textarea>
+            <button id="submit-comment">Submit Comment</button>
+
+            <div id="comments-list">
+                <!-- Submitted comments will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="summary-box">
+            <h3>Project Summary</h3>
+            <p>Here you can provide a brief summary of the project and additional details for those interested.</p>
+        </div>
+
+        <div class="details-box">
+            <h4>Details</h4>
+            <p>This box can contain more information, timelines, or additional context for the project.</p>
+        </div>
+    </div>
+    <div gitclass="column">
+        <div class="summary-box">
+            <h3>Project Summary</h3>
+            <p>Here you can provide a brief summary of the project and additional details for those interested.</p>
+        </div>
+
+        <div class="details-box">
+            <h4>Details</h4>
+            <p>This box can contain more information, timelines, or additional context for the project.</p>
+        </div>
+    </div>
+</div>
+<button class="close-popup">Close</button>
+</div>
+
+    <script>
+        const tabs = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+        const cards = document.querySelectorAll('#future-projects .card');
+        const popup = document.querySelector('.popup');
+        const overlay = document.querySelector('.overlay');
+        const popupImage = popup.querySelector('img');
+        const popupTitle = popup.querySelector('h2');
+        const popupDescription = popup.querySelector('p');
+        const popupClose = popup.querySelector('button');
+
+        const projectDetails = {
+            parking: {
+                image: 'parking.jpg',
+                title: 'Parking Structure',
+                description: 'Plan and construct a new parking structure with ample EV charging stations to meet the growing demand for electric vehicles.'
+            },
+            garden: {
+                image: 'garden.jpg',
+                title: 'Community Garden',
+                description: 'Design and implement a community garden that serves as a green space for urban gardening, recreation, and community bonding.'
+            },
+            bike: {
+                image: 'bike.jpg',
+                title: 'Fixing Bike Lanes',
+                description: 'Enhance the city’s bike infrastructure by repairing existing bike lanes and adding new ones to promote sustainable commuting.'
+            }
+        };
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // Remove active class from all sections and tabs
+                sections.forEach(section => section.classList.remove('active'));
+                tabs.forEach(tab => tab.classList.remove('active'));
+
+                // Add active class to clicked tab and corresponding section
+                const target = tab.getAttribute('data-tab');
+                document.getElementById(target).classList.add('active');
+                tab.classList.add('active');
+            });
+        });
+
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                const project = card.getAttribute('data-project');
+                const details = projectDetails[project];
+
+                popupImage.src = details.image;
+                popupTitle.textContent = details.title;
+                popupDescription.textContent = details.description;
+
+                popup.style.display = 'block';
+                overlay.style.display = 'block';
+            });
+        });
+
+        popupClose.addEventListener('click', () => {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        overlay.addEventListener('click', () => {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+
+
+
+
