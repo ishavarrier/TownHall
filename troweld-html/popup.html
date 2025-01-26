@@ -131,15 +131,60 @@
                     </div>
                 </div>
 
-                <!-- Gate Welding -->
                 <div class="col-sm-6 col-md-4">
                     <div class="box">
+                        <div class="embed-responsive" id="clickableContent">
+                            <img src="images/ar_building.png" alt="AR Preview" class="img-fluid" data-bs-toggle="modal" data-bs-target="#iframeModal">
+                        </div>
                         <div class="detail-box">
-                            <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                <iframe src="../ar.html" class="embed-responsive-item" allowfullscreen></iframe>
+                            <h3>Variation 1</h3>
+                            <p>Multi-Level Parking Structure with Green Roofs</p>
+
+                            <h5>Project Name:</h5>
+                            <p>Urban Multi-Level Parking Garage</p>
+                            
+                            <h5>Location:</h5>
+                            <p>Main Street & Oak Avenue</p>
+
+                            <h5>Summary:</h5>
+                            <p>This variation involves constructing a multi-level parking garage that maximizes vertical space, allowing for more parking capacity in a smaller footprint. The garage will include green roofs for stormwater management and aesthetic purposes, and each floor will have LED lighting and electric vehicle charging stations. The design features a sleek, modern exterior with glass railings and landscaping around the base, contributing to a visually appealing structure that fits into the downtown vibe.</p>
+
+                            <h5>Key Features:</h5>
+                            <p>Three Levels of Parking: More space with vertical stacking
+                                Green Roof: Sustainable design with plants to reduce heat and manage rainwater
+                                Electric Vehicle (EV) Stations: 10% of spaces dedicated to EV charging
+                                LED Lighting: Energy-efficient and safe environment
+                                Modern Architecture: Glass railings, metal panels, and urban landscaping
+                            </p>
+
+                            <h5>Cost:</h5>
+                            <p>Estimated Cost: $14 million
+                                Maintenance Cost (Annual): $500,000
+                            </p>
+
+
+                            <h5>Benefits:</h5>
+                            <p>Maximizes space while maintaining the urban aesthetic
+                                Sustainable features like a green roof and EV stations
+                                Modern design that blends with the city's downtown</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="iframeModal" tabindex="-1" aria-labelledby="iframeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="iframeModalLabel">Parking Lot Details</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <h5>Gate Welding</h5>
-                            <p>Detailed welding process for gate construction, ensuring structural integrity and precision.</p>
+                            <div class="modal-body">
+                                <!-- Embed the interactive iframe inside the modal -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe src="../ar.html" class="embed-responsive-item" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,9 +192,44 @@
                 <!-- Window Welding -->
                 <div class="col-sm-6 col-md-4">
                     <div class="box">
+                        <div class="embed-responsive" id="clickableContent">
+                            <img src="images/ar_building.png" alt="AR Preview" class="img-fluid" data-bs-toggle="modal" data-bs-target="#iframeModal">
+                        </div>
+
                         <div class="detail-box">
-                            <h5>Window Welding</h5>
-                            <p>Advanced welding techniques for window frame installation, focusing on durability and aesthetic finish.</p>
+                            <h3>Variation 2</h3>
+                            <p>Surface Lot with Modular, Sustainable Features</p>
+
+                            <h5>Project Name:</h5>
+                            <p>Sustainable Modular Parking Lot</p>
+                            
+                            <h5>Location:</h5>
+                            <p>Main Street & Oak Avenue</p>
+
+                            <h5>Summary:</h5>
+                            <p>In this variation, the existing surface parking lot will be reconfigured using modular, sustainable components. The lot will feature permeable pavement to reduce runoff, and solar panel-covered canopies to provide shade while generating clean energy. This design is less dense than the multi-level structure but focuses on making the lot more eco-friendly, efficient, and visually appealing. It will also include bike racks and EV charging spots, promoting eco-friendly transportation.
+                            </p>
+
+                            <h5>Key Features:</h5>
+                            <p>Permeable Pavement: Allows water to flow through, reducing flood risks
+                                Solar Panel Canopies: Energy generation while providing shade to cars
+                                Modular Design: Flexible layout that can be adjusted as demand changes
+                                Bike Racks: Encourages alternative transportation options
+                                EV Charging: Designated spots for electric vehicle charging                                
+                            </p>
+
+                            <h5>Cost:</h5>
+                            <p>Estimated Cost: $8 million
+                                Maintenance Cost (Annual): $300,000                                
+                            </p>
+
+
+                            <h5>Benefits:</h5>
+                            <p>Lower environmental impact with permeable paving and solar panels
+                                Flexible design that can be adjusted based on usage
+                                Less visual impact on the surrounding area than a multi-level structure
+                                Affordable, sustainable solution for parking needs
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -172,8 +252,24 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
+
+    <script>
+    document.getElementById('clickableContent').addEventListener('wheel', function(event) {
+    event.preventDefault(); // if you need to prevent default wheel behavior
+        }, { passive: true });
+
+        document.getElementById('clickableContent').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('iframeModal'));
+    console.log('i was clicked');
+    myModal.show();
+});
+    </script>
+
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
+
+    
 </body>
 </html>
