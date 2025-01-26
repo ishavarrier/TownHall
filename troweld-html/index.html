@@ -115,43 +115,8 @@
             <div class="container ">
               <div class="detail-box">
                 <h1>
-                  We Build <br />
-                  The Things Architects <br />
-                  Dream Up
-                </h1>
-                <div class="btn-box">
-                  <a href="" class="btn1">
-                    Read More
-                  </a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="detail-box">
-                <h1>
-                  We Build <br />
-                  The Things Architects <br />
-                  Dream Up
-                </h1>
-                <div class="btn-box">
-                  <a href="" class="btn1">
-                    Read More
-                  </a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="detail-box">
-                <h1>
-                  We Build <br />
-                  The Things Architects <br />
-                  Dream Up
+                  Empowering Communities, <br />
+                  Shaping Futures <br />
                 </h1>
               </div>
             </div>
@@ -161,6 +126,41 @@
     </section>
     <!-- end slider section -->
   </div>
+
+  <!--countdown -->
+<!-- Countdown Timer Section -->
+  <section class="countdown-container">
+    <h2>Countdown to Next City Council Meeting</h2>
+    <div id="countdown" class="countdown-timer"></div>
+  </section> <!-- Countdown Timer Section -->
+  
+    <!-- Countdown Timer Script -->
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Feb 4, 2025 17:30:00").getTime();
+  
+      // Update the countdown every 1 second
+      var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+  
+        // Time calculations
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+        // Display the result in the element with id="countdown"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+  
+        // If the countdown is finished, display a message
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
 
   <!-- about section -->
 
@@ -265,8 +265,7 @@
                 Dog Park
               </h5>
               <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
+                A spacious, open area designed for dogs to play, exercise, and socialize.
               </p>
             </div>
           </div>
@@ -281,8 +280,7 @@
                 Parking Garage
               </h5>
               <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
+                A multi-level structure providing convenient parking space for vehicles.
               </p>
             </div>
           </div>
@@ -297,8 +295,7 @@
                 New Caffee
               </h5>
               <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
+                A trendy, welcoming space offering freshly brewed coffee and light bites.
               </p>
             </div>
           </div>
@@ -313,8 +310,7 @@
                 Shopping Center
               </h5>
               <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
+                A commercial hub with a variety of retail stores, dining options, and entertainment.
               </p>
             </div>
           </div>
@@ -329,8 +325,7 @@
                 Cinema
               </h5>
               <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
+                A modern theater featuring the latest films in a comfortable viewing environment.
               </p>
             </div>
           </div>
@@ -345,8 +340,7 @@
                 Roads
               </h5>
               <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
+                A network of paved routes for vehicles and pedestrians to travel safely and efficiently.
               </p>
             </div>
           </div>
