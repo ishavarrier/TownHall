@@ -87,7 +87,7 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/townhall.jpg);
   background-size: cover;
 }
 
@@ -96,16 +96,16 @@ a:focus {
 }
 
 .sub_page .header_section .header_bottom {
-  background-color: #003471;
+  background-color: #0a3d12;
 }
 
 .header_section {
-  border-top: 15px solid #da7426;
+  border-top: 15px solid #0a3d12;
 }
 
 .header_section .header_top {
   padding: 15px 0;
-  background-color: #003471;
+  background-color: #f8efd6;
 }
 
 .header_section .header_top .header_top_container {
@@ -130,7 +130,7 @@ a:focus {
 }
 
 .header_section .header_top .contact_nav a {
-  color: #ffffff;
+  color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +147,7 @@ a:focus {
 
 .header_section .header_top .contact_nav a i {
   margin-right: 5px;
-  background-color: #159ec0;
+  background-color: #0a3d12;
   width: 35px;
   height: 35px;
   display: -webkit-box;
@@ -175,7 +175,7 @@ a:focus {
 
 .header_section .header_top .social_box a i {
   margin-right: 5px;
-  background-color: #159ec0;
+  background-color: #0a3d12;
   width: 28px;
   height: 28px;
   display: -webkit-box;
