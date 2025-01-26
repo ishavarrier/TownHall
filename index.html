@@ -55,7 +55,7 @@
             display: block;
         }
 
-        #future-projects {
+        #future-projects .cards-container {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -179,27 +179,29 @@
             <h2>Future Projects</h2>
             <p>Submit your ideas for future projects and vote on proposals from the community.</p>
 
-            <div class="card" data-project="parking">
-                <img src="parking.jpg" alt="Parking Structure">
-                <div class="card-content">
-                    <h3>Parking Structure</h3>
-                    <p>Plan for a new parking structure with EV charging stations.</p>
+            <div class="cards-container">
+                <div class="card" data-project="parking">
+                    <img src="parking.jpg" alt="Parking Structure">
+                    <div class="card-content">
+                        <h3>Parking Structure</h3>
+                        <p>Plan for a new parking structure with EV charging stations.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" data-project="garden">
-                <img src="garden.jpg" alt="Community Garden">
-                <div class="card-content">
-                    <h3>Community Garden</h3>
-                    <p>Design a beautiful space for urban gardening and recreation.</p>
+                <div class="card" data-project="garden">
+                    <img src="garden.jpg" alt="Community Garden">
+                    <div class="card-content">
+                        <h3>Community Garden</h3>
+                        <p>Design a beautiful space for urban gardening and recreation.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" data-project="bike">
-                <img src="bike.jpg" alt="Bike Lanes">
-                <div class="card-content">
-                    <h3>Fixing Bike Lanes</h3>
-                    <p>Improve and expand bike lanes for safer commutes.</p>
+                <div class="card" data-project="bike">
+                    <img src="bike.jpg" alt="Bike Lanes">
+                    <div class="card-content">
+                        <h3>Fixing Bike Lanes</h3>
+                        <p>Improve and expand bike lanes for safer commutes.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -216,7 +218,7 @@
     <script>
         const tabs = document.querySelectorAll('nav a');
         const sections = document.querySelectorAll('section');
-        const cards = document.querySelectorAll('.card');
+        const cards = document.querySelectorAll('#future-projects .card');
         const popup = document.querySelector('.popup');
         const overlay = document.querySelector('.overlay');
         const popupImage = popup.querySelector('img');
